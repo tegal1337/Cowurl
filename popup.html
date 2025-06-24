@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Cowurl - URL Scraper Configuration</title>
   <link rel="stylesheet" href="style.css">
-</head>
+  </head>
 <body>
-    <h3>Scraper Config</h3>
-    <label>Start URL:<input id="startUrl" type="url" autocomplete="url" /></label>
-    <label>Max Page:<input id="maxPage" type="number" autocomplete="off" /></label>
-    <label>Main Tag:<input id="mainTag" type="text" autocomplete="off" /></label>
-    <label>Lock Selector (attr/class/id):<input id="lockSelector" type="text" autocomplete="off" /></label>
-    <label>Get Value From (attr/class/id):<input id="valueSelector" type="text" autocomplete="off" /></label>
-    <label>Output Cleaner (regex):<input id="outputCleaner" type="text" autocomplete="off" /></label>
-    <button id="startBtn">Start Scraping</button>
-    <button id="stopBtn">Stop Scraping</button>
+    <h3>Cowurl: URL Scraper</h3>
 
-    <h4>Output</h4>
-    <textarea id="output" rows="10" readonly></textarea>
+    <fieldset>
+        <legend>Scraping Configuration</legend>
+        <label for="startUrl">Start URL:</label>
+        <input id="startUrl" type="url" autocomplete="url" placeholder="e.g., https://example.com/page?p=SPG:1" />
+
+        <label for="maxPage">Max Page:</label>
+        <input id="maxPage" type="number" autocomplete="off" placeholder="e.g., 10" />
+
+        <label for="mainTag">Main Tag:</label>
+        <input id="mainTag" type="text" autocomplete="off" placeholder="e.g., div, a, li" />
+
+        <label for="lockSelector">Lock Selector (attr/class/id):</label>
+        <input id="lockSelector" type="text" autocomplete="off" placeholder="e.g., attr:href, class:product-item" />
+
+        <label for="valueSelector">Get Value From (attr/class/id):</label>
+        <input id="valueSelector" type="text" autocomplete="off" placeholder="e.g., attr:src, class:title" />
+
+        <label for="outputCleaner">Output Cleaner (regex):</label>
+        <input id="outputCleaner" type="text" autocomplete="off" placeholder="e.g., (?<=images/)(.*?)(?=\.png)" />
+    </fieldset>
+
+    <div class="button-group-top">
+        <button id="startBtn"><i class="fas fa-play"></i> Start Scraping</button>
+        <button id="stopBtn"><i class="fas fa-stop"></i> Stop Scraping</button>
+    </div>
+
+    <h4>Scraped Output</h4>
+    <textarea id="output" rows="10" readonly placeholder="Scraping output will appear here..."></textarea>
     
-    <div style="display: flex; gap: 10px; margin-top: 10px;">
-    <button id="copyBtn">Copy Output</button>
-    <button id="clearBtn">Clear Output</button>
+    <div class="button-group-bottom">
+        <button id="copyBtn"><i class="fas fa-copy"></i> Copy Output</button>
+        <button id="clearBtn"><i class="fas fa-trash"></i> Clear Output</button>
     </div>
   <script src="popup.js"></script>
 </body>
