@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Scraper Config</h3>
+    <label>Start URL:<input id="startUrl" type="url" autocomplete="url" /></label>
+    <label>Max Page:<input id="maxPage" type="number" autocomplete="off" /></label>
+    <label>Main Tag:<input id="mainTag" type="text" autocomplete="off" /></label>
+    <label>Lock Selector (attr/class/id):<input id="lockSelector" type="text" autocomplete="off" /></label>
+    <label>Get Value From (attr/class/id):<input id="valueSelector" type="text" autocomplete="off" /></label>
+    <label>Output Cleaner (regex):<input id="outputCleaner" type="text" autocomplete="off" /></label>
+    <button id="startBtn">Start Scraping</button>
+    <button id="stopBtn">Stop Scraping</button>
+
+    <h4>Output</h4>
+    <textarea id="output" rows="10" readonly></textarea>
+    
+    <div style="display: flex; gap: 10px; margin-top: 10px;">
+    <button id="copyBtn">Copy Output</button>
+    <button id="clearBtn">Clear Output</button>
+    </div>
+  <script src="popup.js"></script>
+</body>
+</html>
