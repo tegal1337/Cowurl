@@ -1,6 +1,8 @@
 # Cowurl
 Taming the Web. Inspired by the cowboy's dexterity in capturing wild horses, Cowurl offers the ability to capture and manage URLs from the vastness of cyberspace.
 
+![alt text](democowrl.gif)
+
 ## Key Features
 
 * **Automatic URL Collection**
