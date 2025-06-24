@@ -1,5 +1,6 @@
 # Cowurl
-Taming the Web. Inspired by the cowboy's dexterity in capturing wild horses, Cowurl offers the ability to capture and manage URLs from the vastness of cyberspace.
+Taming the Web. Inspired by the cowboy's dexterity in capturing wild horses, Cowurl offers the ability to capture and manage URLs from the vastness of cyberspace. 
+> Use this when your auto-scraping CLI tools are hindered by WAFs that require real browser-based access.
 
 ![alt text](democowrl.gif)
 
